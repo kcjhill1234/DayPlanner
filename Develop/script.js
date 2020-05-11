@@ -25,7 +25,7 @@ function checkLocalStorage(key) {
 if (!checkLocalStorage(currentDay)) {
     localStorage.setItem(currentDay, JSON.stringify({}))
 
-    }
+}
 
 function buildTemplate(data) {
     return `
@@ -45,7 +45,7 @@ function saveEvent(id) {
 
 
 
-    
+
     const eventText = $(`#timeBlock-${id}`).val();
     alert(eventText);
     eventsForDay[id] = eventText;
@@ -81,7 +81,7 @@ for (let i = 0; i <= 8; i++) {
     const obj = {
         time: timeBlock.format("hA"),
         event: eventData[i] || "",
-        id: i, 
+        id: i,
         colorCode
 
     };
